@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Shopping Man </title>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+	*{
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+	}
+	.main{
+	width:80%;
+	margin: 10px auto;
+	padding:15px;
+	border-radius:10px;
+	border:1px solid gray;
+	}
+	.head_content .fa-slash{
+	transform: rotateZ(15deg);
+	color:gray;
+	}
+	.head_content{
+	display:flex;
+	font-weight: 600;
+	margin-top:5px;
+	margin-left:15px;
+	font-size:15px;
+	<!-- padding:0 7px; -->
+	}
+	.head_content p:nth-child(3){
+	color:gray;
+	}
+	.image_sec {
+	display:flex;
+	flex-wrap:wrap;
+	}
+	.col {
+	width:33.3%;
+	<!-- border:2px solid; -->
+	}
+	.col .image{
+	padding:10px;
+	}
+	.col .image img{
+	width:100%;
+	vertical-align:middle;
+	border-radius:5px;
+	<!-- height:100%; -->
+	}
+	.col .image .img_height{
+	height:520px;
+	}
+	.main_text_sec{
+	margin:10px;
+	padding:10px 0;
+	display: flex;
+    justify-content: space-between;	
+	}
+	.left_text{
+	width:65%;
+	margin-top:25px;
+	}
+	.content_1 h1{
+	font-size: x-large;
+	}
+	.content_1 p{
+	    padding-top: 20px;
+		word-spacing:5px;
+	}
+	.content_2 h3{
+	margin-top:25px;
+	color:#0f0f0fa8;
+	}
+	.content_2 ul{
+	padding:10px 0;
+	color:gray;
+	}
+	.content_2 ul li{
+	margin-top:5px;
+	margin-left:15px;
+	<!-- font-size:15px; -->
+	}
+	.content_3{
+	margin-top:20px;
+	}
+	.content_3 p{
+	margin-top:25px;
+	word-spacing:5px;
+	color:gray;	
+	}
+	.right_text_sec{
+	width:30%;
+	margin-top: 25px;
+	}
+	.right_text_sec .rgt_content_1 h1{
+	font-size:30px;
+	}
+	.star_sec{
+	margin-top:20px;
+	display: flex;
+    gap: 16px;
+    align-items: center;
+	}
+	.star_sec .star i:nth-child(5){
+	color:#0000003d	;
+	}
+	.star_sec .review_sec a{
+	    text-decoration: none;
+    font-weight: 600;
+    color: rgb(79,70,229);
+	}
+	.star_sec .review_sec a:hover{
+	color:#0A66C3;
+	}
+	.circle_sec{
+	display:flex;
+	gap:15px;
+	}
+	.circle_1{
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid;
+	}
+	
+	.circle_border{
+	width: 40px;
+    height:40px;
+    border-radius: 50%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+    border: 3px solid white;
+    <!-- background-color: white; -->
+	}
+	
+	.circle_border:hover{
+    border: 3px solid gray;
+	}
+	
+	
+	.circle_2{
+	width: 30px;
+    height: 30px;
+    background-color: #E5E7EB;
+    border-radius: 50%;
+    border: 2px solid;
+	}
+	.circle_3{
+	width: 30px;
+    height: 30px;
+    background-color: #111827;
+    border-radius: 50%;
+    border: 2px solid;
+	}
+	.color_head h1{
+	    margin: 25px 0px 20px;
+	}
+	.size_text{
+	margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	}
+	.size_text a{
+	display: inline-block;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+	}
+	.box_sec{
+	margin-top:20px;	
+	    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+	}
+	.box{
+	width:22%;
+	margin:0 auto;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	.box_sec .box p{
+	padding: 20px;
+    border: 1px solid #80808099;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+	}
+	.box_sec .box p:hover{
+	border:1px solid blue;
+	background-color: #F9FAFB;
+	}
+	.size_sec button{
+	font-weight: 700;
+    font-size: 15px;
+    margin-top: 30px;
+	background-color:#4F46E5;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 133px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+	}
+	.size_sec button:hover{
+    background-color: #4238c8;
+	}
+	.jeeva {
+	    cursor: not-allowed;
+    border-color: #80808029!important;
+    background-color: white!important;
+
+	}
+	
+
+	
+</style>
+
+<body>
+
+<section class="main">
+	<div class="main_container">
+
+		<div class="head_content">
+			<p>Men<i class="fa-solid fa-slash"></i></p>
+			<p>Clothing <i class="fa-solid fa-slash"></i></p>
+			<p>Basic Tee 6-pack</p>
+		</div>
+		
+	
+		<!-- IMAGE SECTION START -->
+		<div class="image_sec">
+		
+			<!-- FIRST -->			
+			<div class="col">
+				<div class="image">
+					<img class="img_height" src="./image/img1.jpg">
+				</div>
+			</div>
+			
+			<!-- SECOND -->
+			<div class="col">
+				<div class="image">
+					<img src="./image/img2.jpg">
+				</div>
+				<div class="image">
+					<img src="./image/img3.jpg">
+				</div>
+			</div>
+			
+			<!-- THIRD -->			
+			<div class="col">
+				<div class="image">	
+					<img class="img_height" src="./image/img4.jpg">		
+				</div>
+			</div>
+			
+		</div>
+		<!-- IMAGE SECTION END -->
+
+		<!-- CONTENT SECTION START -->
+		<section class="main_text_sec">
+			
+			<!-- LEFT TEXT SECTION START -->
+			<div class="left_text">
+				<div class="content_1">
+					<h1> Basic Tee 6-Pack</h1>
+					<p>The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? 
+						Put on a heather gray tee. Want to be a trendsetter? 
+						Try our exclusive colorway: "Black". Need to add an extra pop of color to your outfit? Our white tee has you covered.</p>
+				</div>
+				
+				<div class="content_2">
+					<h3>Highlights</h3>
+					<ul>
+						<li>Hand cut and sewn locally</li>
+						<li>Dyed with our proprietary colors</li>
+						<li>Pre-washed & pre-shrunk</li>
+						<li>Ultra-soft 100% cotton</li>
+					</ul>
+				</div>
+				
+				<div class="content_3">
+					<h3> Details</h3>
+					<p>The 6-Pack includes two black, two white, and two heather gray Basic Tees. 
+					Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming "Charcoal Gray" limited release.</p>
+				</div>
+			</div>
+			<!-- LEFT TEXT SECTION END -->
+			<hr>
+			<!-- RIGHT TEXT SECTION START -->
+			<div class="right_text_sec">
+				<div class="rgt_content_1">
+					<h1>$192</h1> 
+				</div>
+				
+				 <!-- 5 STAR -->
+				 
+				<div class="star_sec">
+					<div class="star">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+					</div>
+					<div class="review_sec">
+						<a href="#" >117 reviews</a>
+					</div>
+				</div>
+				
+				<div class="color_head">
+					<h1> Color</h1>
+					
+					<div class="circle_sec">
+						<div class="circle_border">
+							<div class="circle_1">
+							</div>
+						</div>
+						
+						<div class="circle_border">
+							<div class="circle_2">
+							</div>
+						</div>
+						
+						<div class="circle_border">
+							<div class="circle_3">
+							</div>
+						</div>
+					</div>
+										
+				</div >
+				
+				<div class="size_sec">
+		
+					<div class="size_text">
+						<h3>Size</h3>
+						<a href="#"> Size guide</a>					
+					</div>
+					
+					<div class="box_sec">
+						<div class="box" >
+							<p class="jeeva">XXL</p>
+						</div>
+						<div class="box">
+							<p>XS</p>
+						</div>
+						<div class="box">
+							<p>S</p>
+						</div>
+						<div class="box">
+							<p>M</p>
+						</div>
+						<div class="box">
+							<p>L</p>
+						</div>	
+						<div class="box">
+							<p>XL</p>
+						</div>	
+						<div class="box">
+							<p>2XL</p>
+						</div>	
+						<div class="box">
+							<p>3XL</p>
+						</div>					
+					</div>
+					
+					<!-- FOOTER BUTTON START -->
+					<button type="Add to bag"> Add to bag</button>
+					
+				</div>
+				
+			</div>
+			<!-- RIGHT TEXT SECTION END -->
+			
+		</section>
+	</div>
+</section>
+
+</body>
+</html>
